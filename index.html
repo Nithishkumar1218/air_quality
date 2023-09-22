@@ -17,7 +17,7 @@
   </style>
 </head>
 <body>
-  <h2>ESP Weather Station</h2>
+  <h2>Real Time Air Quality Monitoring</h2>
   <div id="chart-temperature" class="container"></div>
   <div id="chart-humidity" class="container"></div>
   <div id="chart-pressure" class="container"></div>
@@ -25,7 +25,7 @@
 <script>
 var chartT = new Highcharts.Chart({
   chart:{ renderTo : 'chart-temperature' },
-  title: { text: 'BME280 Temperature' },
+  title: { text: 'Temperature' },
   series: [{
     showInLegend: false,
     data: []
@@ -65,7 +65,7 @@ setInterval(function ( ) {
 
 var chartH = new Highcharts.Chart({
   chart:{ renderTo:'chart-humidity' },
-  title: { text: 'BME280 Humidity' },
+  title: { text: 'Humidity' },
   series: [{
     showInLegend: false,
     data: []
@@ -104,7 +104,7 @@ setInterval(function ( ) {
 
 var chartP = new Highcharts.Chart({
   chart:{ renderTo:'chart-pressure' },
-  title: { text: 'BME280 Pressure' },
+  title: { text: 'Pressure' },
   series: [{
     showInLegend: false,
     data: []
